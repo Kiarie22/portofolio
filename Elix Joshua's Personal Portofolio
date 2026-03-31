@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elix Kiarie Joshua | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Elix Kiarie Joshua</h1>
+    <p>Aspiring Software Engineer & Agricultural Economist</p>
+    <a href="about.html" class="btn">Learn More</a>
+    <a href="projects.html" class="btn">View Projects</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Elix Kiarie Joshua</p>
+  </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>About Me</h2>
+  </header>
+
+  <main>
+    <section>
+      <h3>Biography</h3>
+      <p>Born in Murang’a, fascinated by technology since childhood. Currently pursuing Agricultural Economics & Rural Development at JKUAT, integrating IT with agribusiness.</p>
+    </section>
+
+    <section>
+      <h3>Education</h3>
+      <ul>
+        <li>JKUAT – BSc Agricultural Economics & Rural Development (2024–present)</li>
+        <li>St. Thomas Aquinas Kalawa Boys – KCSE (2023)</li>
+        <li>Stella Maris Primary – KCPE (2019)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Skills</h3>
+      <ul>
+        <li>Driving – Semi-pro</li>
+        <li>Soccer – Intermediate</li>
+        <li>Cooking – Beginner</li>
+        <li>IT Skills – Cloud, Networking, Programming</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Hobbies</h3>
+      <p>Driving, Traveling, Soccer, Cooking, Drawing, Watching Movies</p>
+    </section>
+  </main>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h2>My Projects</h2></header>
+  <main>
+    <section class="projects">
+      <div class="card">
+        <h3>Poultry Farming</h3>
+        <p>Learned livestock care, record keeping, and agribusiness operations after high school.</p>
+      </div>
+      <div class="card">
+        <h3>Future Agritech Apps</h3>
+        <p>Exploring software engineering to build farm management and crop monitoring solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Drawing Certificate</h3>
+        <p>Creative side project showcasing artistic skills.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h2>Contact Me</h2></header>
+  <main>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject">
+
+      <label for="message">Message:</label>
+      <textarea id="message"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+    <footer>
+      <p>Phone: 0795188243 | Address: PO BOX 00100</p>
+    </footer>
+  </main>
+</body>
+</html>:root {
+  --primary-color: #2c3e50;
+  --accent-color: #3498db;
+  --text-color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+header, footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px;
+}
+
+.btn {
+  background: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
